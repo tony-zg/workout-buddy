@@ -1,0 +1,22 @@
+.signup {
+  margin-top: 5rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.signup button {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.signup .text {
+  margin-top: 1rem;
+}
+
+.signup .link {
+  color: #0a66c2;
+  padding-left: 4px;
+}

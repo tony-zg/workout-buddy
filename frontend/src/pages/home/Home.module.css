@@ -1,0 +1,14 @@
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 6.25rem;
+  padding: 2rem;
+  margin-top: 8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

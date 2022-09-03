@@ -1,0 +1,128 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+ul {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+a,
+a:visited,
+a:active {
+  color: #000;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+label,
+input {
+  display: block;
+}
+
+/* remove arrows from number input  */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+:root {
+  /* colors */
+  --primary: #1aac83;
+  --error: #e7195a;
+
+  /* border-radius */
+  --br: 4px;
+}
+
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+input {
+  padding: 0.625rem;
+  margin-top: 0.625rem;
+  margin-bottom: 1.25rem;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: var(--br);
+}
+
+input:focus {
+  outline-color: var(--primary);
+}
+
+.form__outer__container {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.form__container {
+  width: 100%;
+  max-width: 25rem;
+  padding: 1.25rem;
+  background: #fff;
+  border-radius: var(--br);
+}
+
+.form__btn {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 0.625rem;
+  border-radius: var(--br);
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  background-image: linear-gradient(
+    45deg,
+    hsl(154deg 53% 57%) 0%,
+    hsl(159deg 52% 55%) 11%,
+    hsl(163deg 51% 52%) 22%,
+    hsl(166deg 50% 50%) 33%,
+    hsl(169deg 52% 48%) 44%,
+    hsl(172deg 54% 46%) 56%,
+    hsl(174deg 54% 45%) 67%,
+    hsl(177deg 54% 44%) 78%,
+    hsl(179deg 52% 43%) 89%,
+    hsl(181deg 49% 43%) 100%
+  );
+}
+
+.input__error {
+  border: 1px solid var(--error);
+}
+
+.form__error {
+  /* width: 80%; */
+  padding: 0.625rem;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: var(--br);
+  margin: 1.25rem auto;
+  text-align: center;
+}

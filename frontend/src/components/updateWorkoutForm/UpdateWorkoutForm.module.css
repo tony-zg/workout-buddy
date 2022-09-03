@@ -1,0 +1,13 @@
+.update .title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.update .btn__container {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.update button {
+  margin-right: 1rem;
+}
