@@ -11,6 +11,7 @@ This is a responsive MERN stack web application that has several functionalities
 Pre-made account is below:
 
 email: test@gmail.com
+
 password: chicken
 
 # Screenshot
