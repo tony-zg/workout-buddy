@@ -8,15 +8,22 @@ This is a responsive MERN stack web application that has several functionalities
 - User authentication
 - User can get, create, update and delete workouts
 
+Pre-made account is below:
+
+email: test@gmail.com
+
+password: chicken
+
 # Screenshot
 
-![](src/assets/workout-buddy.png)
+![](frontend/src/assets/workout-buddy.png)
 
 # Frontend
 
 - React Hooks, Context API and Reducer
 - React Router v6
 - React Icons
+- CSS Modules
 
 # Backend
 

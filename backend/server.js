@@ -6,7 +6,7 @@ const workoutRoutes = require('./routes/workouts');
 const userRoutes = require('./routes/user');
 const cors = require('cors');
 
-const port = process.env.Port || 4000;
+const port = process.env.PORT || 4000;
 
 // express app
 const app = express();

@@ -14,19 +14,15 @@ exports.validateUser = [
     .not()
     .isEmpty()
     .withMessage('Password is missing!')
-    .isStrongPassword()
-    .withMessage(
-      'Passwords MUST contain a minimum length of 8 characters and all four character types: Uppercase letters: A-Z. Lowercase letters: a-z. Numbers: 0-9. Symbols: ~`!@#$%^&*()_-+={[}]|:;"\'<,>.?/'
-    ),
+    .isLength({ min: 6, max: 15 })
+    .withMessage('Password must be 6 to 15 characters long!'),
   check('confirmPassword')
     .trim()
     .not()
     .isEmpty()
     .withMessage('Confirm Password is missing!')
-    .isStrongPassword()
-    .withMessage(
-      'Password MUST contain a minimum length of 8 characters and all four character types: Uppercase letters: A-Z. Lowercase letters: a-z. Numbers: 0-9. Symbols: ~`!@#$%^&*()_-+={[}]|:;"\'<,>.?/'
-    )
+    .isLength({ min: 6, max: 15 })
+    .withMessage('Confirm Password must be 6 to 15 characters long!')
 ];
 
 exports.validate = (req, res, next) => {
